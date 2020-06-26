@@ -1,0 +1,24 @@
+.form {
+    display: flex;
+    justify-content: baseline;
+    justify-self: center;
+}
+
+.search_box {
+    width: 100;
+    padding: 0.6rem;
+    border: 1 solid #ccc;
+}
+
+.button {
+    height: 1.2rem;
+    width: 1rem;
+}
+
+.search_button {
+    padding: 0.6rem;
+}
+
+.search {
+    height: 96.3vh;
+}

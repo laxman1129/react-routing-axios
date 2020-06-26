@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menuitem {
+    padding: 0.5rem 1rem;
+}
+
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,7 @@
+.home {
+    width: 100vw;
+    height: 96.3vh;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url("../../assets/home.jpg");
+    background-size: cover;
+}
