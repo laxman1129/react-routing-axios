@@ -8,10 +8,25 @@
     list-style: none;
 }
 
-.menuitem {
+/* .menuitem {
     padding: 0.5rem 1rem;
 }
 
 .link {
     text-decoration: none;
+} */
+
+a.link:link,
+a.link:visited {
+    background-color: rgba(20, 44, 27, 0.01);
+    color: white;
+    padding: 0.3rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.link:hover,
+a.link:active {
+    background-color: red;
 }

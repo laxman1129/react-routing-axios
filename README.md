@@ -37,9 +37,18 @@ Switch returns only the first matching route rather than all matching routes.
 
 `Redirect` : A `<Redirect>` will replace the current location in the history stack with a new location. The new location is specified by the to prop.
 
-## Implementation
+## Flow
 
-- Create `Routes.tsx` file and add routes in the file.
+- `Link` has the url path in its 'to' attribute.
+- `Route` is defined with the 'path' and 'component' attributes
+- When multiple `Route`s are placed under a `Switch`; only one `Route` is loaded, which matches the path.
+- `BrowserRouter` holds all the routes to be managed by react router (for DOM).
+
+---
+
+### When a `Link` is clicked, the `Switch` identifies the `Route` to be loaded for rendering by the `BrowserRouter`
+
+### The `component` which matches the `path` in the `Route` is then loaded by the `BrowserRouter`
 
 ## References
 

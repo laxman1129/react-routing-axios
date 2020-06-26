@@ -5,14 +5,11 @@ const Quote = () => <div className={css.quote}>Quote</div>;
 
 const Quotes = () => (
   <div className={css.quotes}>
-    <Quote />
-    <Quote />
-    <Quote />
-    <Quote />
-    <Quote />
-    <Quote />
-    <Quote />
-    <Quote />
+    <Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote />
+    <Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote />
+    <Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote />
+    <Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote />
+    <Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote /><Quote />
   </div>
 );
 
