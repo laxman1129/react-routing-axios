@@ -8,7 +8,7 @@ const Navbar = () => (
     <ul className={css.menu}>
       <li className={css.menuitem}>
         {/* to contains the route. When the link is clicked the route will be loaded by the router in the view */}
-        <Link to="/" className={css.link}>
+        <Link to="/home" className={css.link}>
           Home
         </Link>
       </li>

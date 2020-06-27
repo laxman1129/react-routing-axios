@@ -24,7 +24,8 @@ const Routes = () => (
         <Route path="/search" component={Search} />
         {/* the `/` is kept at the end so that when no other route matches it should take to the home page */}
         {/* Try changing the url in the browser which does not match any route */}
-        <Route path="/" component={Home} />
+        {/* :param is added to demonstrate use of useParams hook */}
+        <Route path="/:param1" component={Home} />
       </Switch>
     </main>
   </div>
