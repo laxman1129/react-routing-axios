@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import css from "./App.module.css";
 import Routes from "./components/Routes";
 
-function App() {
+const App = () => {
   return (
     // Router encompasses all components which needs to be managed under router
     <Router>
@@ -16,6 +16,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

@@ -44,11 +44,11 @@ Switch returns only the first matching route rather than all matching routes.
 - When multiple `Route`s are placed under a `Switch`; only one `Route` is loaded, which matches the path.
 - `BrowserRouter` holds all the routes to be managed by react router (for DOM).
 
----
-
 ### When a `Link` is clicked, the `Switch` identifies the `Route` to be loaded for rendering by the `BrowserRouter`
 
 ### The `component` which matches the `path` in the `Route` is then loaded by the `BrowserRouter`
+
+---
 
 ## References
 
