@@ -50,6 +50,118 @@ Switch returns only the first matching route rather than all matching routes.
 
 ---
 
+# Axios
+
+## Using yarn
+
+```bash
+yarn add axios
+
+yarn add @types/axios
+```
+
+## What is Axios
+
+Axios is a promise-based HTTP client that works both in the browser and in a node.js environment.  
+It basically provides a single API for dealing with XMLHttpRequests and node’s http interface.  
+Besides that, it wraps the requests using a polyfill for ES6 new’s promise syntax.
+
+Two major advantages of using axios when compared to fetch are
+
+1. Automatic transforms of JSON data.
+
+2. Better error handling
+
+### Examples
+
+#### get
+
+```javascript
+// Performing a GET request
+axios.get("https://api.github.com/users/" + username).then(function (response) {
+  console.log(response.data); // ex.: { user: 'Your User'}
+  console.log(response.status); // ex.: 200
+});
+```
+
+#### post
+
+```javascript
+// Performing a POST request
+axios
+  .post("/save", { firstName: "Marlon", lastName: "Bernardes" })
+  .then(function (response) {
+    console.log("saved successfully");
+  });
+```
+
+---
+
+# useReducer Hook
+
+## What is reducer
+
+A `reducer` is a simple function that takes two values and reduces them down to one value.  
+Reducers are used in reactjs application to determine changes to the application state.
+
+Let's dive into the implementation details: In essence, a `reducer` is a function which takes <u>two arguments</u> -- the `current state` and an `action` -- and returns based on both arguments a `new state`. In a pseudo function it could be expressed as:
+
+```javascript
+(state, action) => newState;
+```
+
+### Example
+
+```javascript
+const counterReducer = (count, action) => {
+  if (action.type === "INCREASE") {
+    return count + 1;
+  }
+
+  if (action.type === "DECREASE") {
+    return count - 1;
+  }
+
+  return count;
+};
+```
+
+## What is useReducer
+
+`useReducer` is a react hook, which accepts a `reducer function` with the application `initial state`, returns the `current application state`, then `dispatches` a function.
+
+```javascript
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+## When to prefer useReducer over useState
+
+Use useState if you have:
+
+- JavaScript primitives as state
+- simple state transitions
+- business logic within your component
+- different properties that don't change in any correlated way and can be managed by multiple useState hooks
+- state co-located to your component
+- a small application (but the lines are blurry here)
+
+One usecase is `controlled components`
+
+Use useReducer if you have:
+
+- JavaScript objects or arrays as state
+- complex state transitions
+- complicated business logic more suitable for a reducer function
+- different properties tied together that should be managed in one state object
+- the need to update state deep down in your component tree
+- a medium-sized application (NB: the lines are blurry here)
+- need for an easier time testing it
+- need for a more predictable and maintainable state architecture
+
+One usecase could be, fetching data from rest endpoint, based on several actions to maintain the state.
+
+---
+
 ## References
 
 - https://reacttraining.com/react-router/web/guides/quick-start
@@ -58,3 +170,4 @@ Switch returns only the first matching route rather than all matching routes.
 - https://github.com/public-apis/public-apis
 - [Naming Conventions](https://github.com/unional/typescript-guidebook/blob/master/pages/default/draft/naming-conventions.md#file-naming)
 - https://gist.github.com/siakaramalegos/df4620c52e829f6107c75d5c3f0ad7f5
+- [Axios](http://codeheaven.io/ow-to-use-axios-as-your-http-client/)

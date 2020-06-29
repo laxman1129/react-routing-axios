@@ -2,7 +2,7 @@ import React from "react";
 /* `BrowserRouter` is the router implementation for HTML5 browsers (vs Native). */
 import { BrowserRouter as Router } from "react-router-dom";
 import css from "./App.module.css";
-import Routes from "./components/Routes";
+import Routes from "./Routes";
 
 const App = () => {
   return (

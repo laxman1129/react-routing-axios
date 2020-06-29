@@ -6,10 +6,10 @@ import React from "react";
 */
 import { Switch, Route } from "react-router-dom";
 import css from "./Routes.module.css";
-import Home from "./home/Home";
-import Quotes from "./quote/Quotes";
-import Search from "./search/Search";
-import Navbar from "./navbar/Navbar";
+import Home from "./components/home/Home";
+import Quotes from "./components/quote/Quotes";
+import Search from "./components/search/Search";
+import Navbar from "./components/navbar/Navbar";
 
 const Routes = () => (
   <div>
